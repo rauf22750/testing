@@ -19,9 +19,8 @@ from django.http import HttpResponse
 from testing import views
 
 
-def hello(request):
-    return HttpResponse("Hello, Vercel!")
+
 
 urlpatterns = [
-    path('', hello, name='hello'),
+    path('',views.index,name='index')
 ]
