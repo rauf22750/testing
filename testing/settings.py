@@ -45,7 +45,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'minimal_django.wsgi.application'
+WSGI_APPLICATION = 'testing.wsgi.application'
 
 DATABASES = {
     'default': {
