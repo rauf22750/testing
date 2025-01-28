@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.urls import path
 from django.http import HttpResponse
-from . import views
+from testing import views
+
 
 def hello(request):
     return HttpResponse("Hello, Vercel!")
