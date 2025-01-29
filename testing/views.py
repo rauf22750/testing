@@ -1,7 +1,4 @@
 from django.http import HttpResponse
-from django.http import HttpResponse
-
-from django.http import HttpResponse
 
 def index(request):
     # Define the HTML content with embedded CSS for design
@@ -11,7 +8,7 @@ def index(request):
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome</title>
+        <title>Welcome to My Project</title>
         <style>
             body {
                 font-family: 'Arial', sans-serif;
@@ -27,13 +24,13 @@ def index(request):
             }
 
             h1 {
-                font-size: 3em;
+                font-size: 2.5em;
                 color: #2c3e50;
                 margin-bottom: 20px;
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 color: #34495e;
                 line-height: 1.6;
             }
@@ -46,6 +43,7 @@ def index(request):
                 width: 80%;
                 max-width: 600px;
                 margin: 20px;
+                text-align: center;
             }
 
             .button {
@@ -63,13 +61,23 @@ def index(request):
             .button:hover {
                 background-color: #2980b9;
             }
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>Hello, World!</h1>
-            <p>This is a simple HTML page returned from the index view in Django. It includes a basic design to make it visually appealing.</p>
-            <a href="#" class="button">Click Me!</a>
+            <img src="path/to/your/image.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Welcome to My First Deployment!</h1>
+            <p>This is my first deployed project on Vercel, created using Django. I am a Python Django developer currently working on an NLP project focused on building a chatbot.</p>
+            <p>Feel free to explore my work and learn more about the exciting projects I'm developing in the field of Natural Language Processing (NLP).</p>
+            <a href="#" class="button">Check Out My Project</a>
         </div>
     </body>
     </html>
@@ -77,5 +85,3 @@ def index(request):
     
     # Return the HTML content as an HTTP response
     return HttpResponse(html_content)
-
-
