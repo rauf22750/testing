@@ -1,12 +1,4 @@
-from django.http import HttpResponse
-from django.http import HttpResponse
-
-from django.http import HttpResponse
-
-def index(request):
-    # Define the HTML content with embedded CSS for design
-    html_content = """
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -73,9 +65,3 @@ def index(request):
         </div>
     </body>
     </html>
-    """
-    
-    # Return the HTML content as an HTTP response
-    return HttpResponse(html_content)
-
-

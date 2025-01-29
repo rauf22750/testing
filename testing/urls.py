@@ -20,6 +20,5 @@ from testing import views
 
 urlpatterns = [
     path('', views.index, name='home'),  # Dynamic content
-    path('static/html/index.html', views.static_html, name='static_html'),  # Static HTML files
 ]
 
