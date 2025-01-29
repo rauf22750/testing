@@ -22,6 +22,6 @@ from testing import views
 
 
 urlpatterns = [
-    path('index/',views.index,name='index'),
-    path('',views.home,name='home')
+    path('',views.index,name='index'),
+    # path('',views.home,name='home')
 ]
