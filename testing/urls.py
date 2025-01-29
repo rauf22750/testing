@@ -19,7 +19,7 @@ from django.http import HttpResponse
 from testing import views
 
 urlpatterns = [
-    path('', views.home, name='home'),  # Dynamic content
+    path('', views.index, name='home'),  # Dynamic content
     path('static/html/index.html', views.static_html, name='static_html'),  # Static HTML files
 ]
 

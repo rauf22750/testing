@@ -4,8 +4,11 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import os
 
+def home(request):
+    return render(request, 'homepage/home.html')
+
 def static_html(request, filename):
-    file_path = os.path.join('pdf_chatbot/static/html', filename)
+    file_path = os.path.join('testing/static/html', filename)
     
     if os.path.exists(file_path):
         with open(file_path, 'r') as file:
@@ -13,8 +16,7 @@ def static_html(request, filename):
         return HttpResponse(content, content_type='text/html')
     else:
         return HttpResponse("File not found.", status=404)
-def home(request):
-    return render(request, 'homepage/home.html')
+
 def index(request):
     # Define the HTML content with embedded CSS for design
     html_content = """
