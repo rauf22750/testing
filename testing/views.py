@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 
 def index(request):
-    # Define the HTML content with embedded CSS for design
     html_content = """
     <!DOCTYPE html>
     <html lang="en">
@@ -73,6 +72,7 @@ def index(request):
     </head>
     <body>
         <div class="container">
+            <img src="https://via.placeholder.com/150/0000FF/808080 ?Text=PAKAINFO.com" alt="Profile Picture" class="profile-pic">
             <h1>Welcome to My First Deployment!</h1>
             <p>This is my first deployed project on Vercel, created using Django. I am a Python Django developer currently working on an NLP project focused on building a chatbot.</p>
             <p>Feel free to explore my work and learn more about the exciting projects I'm developing in the field of Natural Language Processing (NLP).</p>
@@ -82,5 +82,4 @@ def index(request):
     </html>
     """
     
-    # Return the HTML content as an HTTP response
     return HttpResponse(html_content)
